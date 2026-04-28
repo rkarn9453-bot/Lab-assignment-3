@@ -1,0 +1,42 @@
+:root {
+  --bg: #0d0221;
+  --card: #1a083d;
+  --neon: #bc13fe;
+  --pink: #ff00e0;
+}
+
+body { background: var(--bg); color: white; font-family: 'Segoe UI', sans-serif; padding: 20px; }
+.container { max-width: 850px; margin: auto; }
+.card { background: var(--card); border: 1px solid var(--neon); padding: 20px; margin-bottom: 20px; box-shadow: 0 0 10px rgba(188, 19, 254, 0.2); }
+.card-header { display: flex; justify-content: space-between; color: var(--neon); font-size: 0.8rem; margin-bottom: 10px; border-bottom: 1px solid #3d1c71; padding-bottom: 5px; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }
+.stat-box { background: var(--card); border: 1px solid #3d1c71; padding: 15px; text-align: center; }
+.stat-box h2 { color: var(--pink); margin: 5px 0; font-size: 2rem; }
+
+.score-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.score-table th { color: var(--neon); text-align: left; padding: 10px; border-bottom: 1px solid #3d1c71; text-transform: uppercase; font-size: 0.9rem; }
+.score-table td { padding: 12px 10px; border-bottom: 1px solid #2a1254; vertical-align: middle; }
+
+.name-col { text-transform: capitalize; font-weight: 500; }
+.fail-row td { color: #ff3131 !important; }
+.status-badge { border: 1px solid; padding: 3px 8px; font-size: 0.7rem; border-radius: 2px; }
+
+.update-input { width: 50px; background: #2a1254; border: 1px solid var(--neon); color: white; padding: 5px; outline: none; }
+.save-btn { background: transparent; border: 1px solid #4a90e2; color: #4a90e2; padding: 5px 12px; cursor: pointer; margin-left: 8px; transition: 0.3s; }
+.save-btn:hover { background: #4a90e2; color: white; }
+
+.header h1 {
+  display: flex;
+  justify-content: center;
+  /* Spacing between letters */
+  letter-spacing: 5px; 
+  /* Spacing below the heading */
+  margin-bottom: 40px; 
+  font-size: 3rem;
+  text-transform: uppercase;
+  
+  /* Neon Purple Color and Glow */
+  color: #bc13fe; 
+  text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe;
+}
