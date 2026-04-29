@@ -5,7 +5,13 @@ import StudentTable from './components/StudentTable';
 import './App.css';
 
 function App() {
-  const [students, setStudents] = useState([]);
+  const [students, setStudents] = useState([
+{ id: 1, name: 'Alice', score: 85 },
+{ id: 2, name: 'Bob', score: 72 },
+{ id: 3, name: 'Charlie', score: 34 },
+{ id: 4, name: 'alex', score: 38 },
+
+  ]);
 
   const addStudent = (name, score) => {
     setStudents([...students, { name, score: Number(score) }]);
